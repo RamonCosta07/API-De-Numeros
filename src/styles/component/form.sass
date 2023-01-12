@@ -1,0 +1,54 @@
+@use '../variables'
+@use '../mixins'
+
+.form
+    .form-col
+        @include mixins.center
+        gap: .9rem
+
+        .label
+            display: flex
+            gap: .8rem
+            font-family: variables.$font-secondary
+            font-size: 20px
+
+        input
+            background: variables.$secondary-color
+            font-family: variables.$font-secondary
+            color: variables.$background
+            font-weight: bold
+            border: none
+            padding-left: .5rem
+
+        #btn
+            border-radius: 3rem
+            padding: .3rem
+            cursor: pointer
+            text-decoration: none
+            background: variables.$btn-color
+
+#details
+    @include mixins.center
+    margin-top: 5rem
+    flex-direction: column
+
+    p
+        font-family: variables.$font-secondary
+        background: variables.$secondary-color
+        color: variables.$background
+        font-weight: bold
+        padding: 1rem
+        border-radius: 3rem
+
+    #my-number
+        font-size: 8rem
+        margin-top: 8rem
+        background: variables.$background
+        color: variables.$text-color
+
+#first-search
+    font-size: 4.5rem
+    color: variables.$first-search
+    font-weight: bold
+    @include mixins.center
+    margin-top: 10rem
